@@ -27,8 +27,8 @@ export const About = () => {
       <p>
         This website was built by Maria Thomasson as my 
         final project at the Technigo coding bootcamp.
-        The project is a combination between school and my new job 
-        and aims to create value to our customers.
+        The project is a combination between school and my new job and aims 
+        to create value to our customers.
       </p>
       <h2>Who am I?</h2>
       <p>
