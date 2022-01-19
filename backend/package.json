@@ -18,7 +18,8 @@
     "crypto": "^1.0.1",
     "express": "^4.17.2",
     "mongoose": "^5.13.14",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "project-auth-parent": "file:.."
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",

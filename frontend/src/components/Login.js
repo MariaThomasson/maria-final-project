@@ -35,7 +35,7 @@ const Login = () => {
     fetch(API_URL(mode), options)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data)
+        //console.log(data)
         if (data.success) {
           batch(() => {
             dispatch(user.actions.setUserId(data.response.userId))
@@ -57,7 +57,7 @@ const Login = () => {
   return (
     <>
       <div>
-        <Link to="/">To '/' !</Link>
+        <Link to="/">To `/`!</Link>
       </div>
       <label htmlFor="signup">Signup</label>
       <input
@@ -85,7 +85,8 @@ const Login = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)} />
         <button type="submit">Submit</button>
-      </form> </>
+      </form> `
+      </>
   )
 }
 
