@@ -4,7 +4,7 @@ const thoughts = createSlice({
   name: 'thoughts',
   initialState: {
     items: [],
-    error: null,
+    error: null
   },
   reducers: {
     setItems: (store, action) => {
@@ -12,8 +12,8 @@ const thoughts = createSlice({
     },
     setError: (store, action) => {
       store.error = action.payload
-    },
-  },
+    }
+  }
 })
 
 export default thoughts

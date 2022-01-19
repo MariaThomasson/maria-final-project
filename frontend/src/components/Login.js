@@ -27,9 +27,9 @@ const Login = () => {
     const options = {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ username, password }),
+      body: JSON.stringify({ username, password })
     }
 
     fetch(API_URL(mode), options)
@@ -64,33 +64,28 @@ const Login = () => {
         id="signup"
         type="radio"
         checked={mode === 'signup'}
-        onChange={() => setMode('signup')}
-      />
+        onChange={() => setMode('signup')} />
       <label htmlFor="signin">Signin</label>
       <input
         id="signin"
         type="radio"
         checked={mode === 'signin'}
-        onChange={() => setMode('signin')}
-      />
+        onChange={() => setMode('signin')} />
       <form onSubmit={onFormSubmit}>
         <label htmlFor="username">Username</label>
         <input
           id="username"
           type="text"
           value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
+          onChange={(e) => setUsername(e.target.value)} />
         <label htmlFor="password">Password</label>
         <input
           id="password"
           type="password"
           value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
+          onChange={(e) => setPassword(e.target.value)} />
         <button type="submit">Submit</button>
-      </form>
-    </>
+      </form> </>
   )
 }
 

@@ -22,8 +22,8 @@ const Main = () => {
     const options = {
       method: 'GET',
       headers: {
-        Authorization: accessToken,
-      },
+        Authorization: accessToken
+      }
     }
 
     fetch(API_URL('thoughts'), options)
@@ -46,7 +46,7 @@ const Main = () => {
       </div>
       <h1>Protected happy thoughts:</h1>
       {thoughtsItems.map((item) => (
-        <div key={item._id}>{item.message}</div>
+        <div key={item.id}>{item.message}</div>
       ))}
     </div>
   )

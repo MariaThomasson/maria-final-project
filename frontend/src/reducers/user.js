@@ -6,7 +6,7 @@ const user = createSlice({
     userId: null,
     username: null,
     accessToken: null,
-    error: null,
+    error: null
   },
   reducers: {
     setUserId: (store, action) => {
@@ -20,8 +20,8 @@ const user = createSlice({
     },
     setError: (store, action) => {
       store.error = action.payload
-    },
-  },
+    }
+  }
 })
 
 export default user
