@@ -12,15 +12,15 @@ const UserSchema = new mongoose.Schema({
   username: {
     type: String,
     unique: true,
-    required: true,
+    required: true
   },
   password: {
     type: String,
-    required: true,
+    required: true
   },
   accessToken: {
     type: String,
-    default: () => crypto.randomBytes(128).toString('hex'),
+    default: () => crypto.randomBytes(128).toString('hex')
   },
 })
 
@@ -29,8 +29,8 @@ const User = mongoose.model('User', UserSchema)
 const ThoughtSchema = new mongoose.Schema({
   message: {
     type: String,
-    required: true,
-  },
+    required: true
+  }
 })
 
 const Thought = mongoose.model('Thought', ThoughtSchema)
@@ -57,9 +57,9 @@ const authenticateUser = async (req, res, next) => {
     } else {
       res.status(401).json({
         response: {
-          message: 'Please, log in',
+          message: 'Please, log in'
         },
-        success: false,
+        success: false
       })
     }
   } catch (error) {
@@ -101,16 +101,16 @@ app.post('/signup', async (req, res) => {
 
     const newUser = await new User({
       username,
-      password: bcrypt.hashSync(password, salt),
+      password: bcrypt.hashSync(password, salt)
     }).save()
 
     res.status(201).json({
       response: {
-        userId: newUser._id,
+        userId: newUser.id,
         username: newUser.username,
-        accessToken: newUser.accessToken,
+        accessToken: newUser.accessToken
       },
-      success: true,
+      success: true
     })
   } catch (error) {
     res.status(400).json({ response: error, success: false })
@@ -126,17 +126,17 @@ app.post('/signin', async (req, res) => {
     if (user && bcrypt.compareSync(password, user.password)) {
       res.status(200).json({
         response: {
-          userId: user._id,
+          userId: user.id,
           username: user.username,
-          accessToken: user.accessToken,
+          accessToken: user.accessToken
         },
-        success: true,
-      });
+        success: true
+      })
     } else {
       res.status(404).json({
         response: "Username or password doesn't match",
-        success: false,
-      });
+        success: false
+      })
     }
   } catch (error) {
     res.status(400).json({ response: error, success: false })
