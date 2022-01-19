@@ -21,7 +21,7 @@ const UserSchema = new mongoose.Schema({
   accessToken: {
     type: String,
     default: () => crypto.randomBytes(128).toString('hex')
-  },
+  }
 })
 
 const User = mongoose.model('User', UserSchema)
@@ -96,7 +96,7 @@ app.post('/signup', async (req, res) => {
     const salt = bcrypt.genSaltSync()
 
     if (password.length < 5) {
-      throw { message: 'Password must be at least 5 characters long' }
+      throw Error({ message: 'Password must be at least 5 characters long' })
     }
 
     const newUser = await new User({
