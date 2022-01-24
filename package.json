@@ -1,7 +1,12 @@
 {
-  "name": "project-auth-parent",
-  "version": "1.0.0",
-  "scripts": {
-    "postinstall": "npm install --prefix backend"
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
+    "@mui/material": "^5.3.0",
+    "redux-thunk": "^2.4.1"
   }
 }
