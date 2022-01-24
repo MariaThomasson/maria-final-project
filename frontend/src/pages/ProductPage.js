@@ -6,8 +6,6 @@ const Container = styled.div``
 
 export const ProductPage = () => {
   return (
-    <Container>
-    
-    </Container>
+    <Container />
   )
 }

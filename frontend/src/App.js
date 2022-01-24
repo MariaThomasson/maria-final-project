@@ -5,24 +5,24 @@ import {
   createStore,
   combineReducers,
   applyMiddleware,
-  compose,
+  compose
 } from '@reduxjs/toolkit'
 import thunk from 'redux-thunk'
-//import { cart } from 'reducers/cart'
-//import { user } from 'reducers/user'
-//import { Login } from 'pages/Login'
-//import { Signup } from 'pages/Signup'
-//import { ProfilePage } from 'pages/ProfilePage'
+//import { cart } from 'reducers/cart'//
+//import { user } from 'reducers/user'//
+//import { Login } from 'pages/Login'//
+//import { Signup } from 'pages/Signup'//
+//import { ProfilePage } from 'pages/ProfilePage'//
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Header } from 'components/Header'
-//import { LandingPage } from 'pages/LandingPage'
+//import { LandingPage } from 'pages/LandingPage'//
 import { ProductPage } from 'pages/ProductPage'
-//import { ProductDetails } from 'pages/ProductDetails'
+//import { ProductDetails } from 'pages/ProductDetails'//
 import { Footer } from 'components/Footer'
-//import { CartPage } from 'pages/CartPage'
-//import { OrderConfirmation } from 'pages/OrderConfirmation'
-//import { UserUpload } from 'pages/UserUpload'
-//import { Market } from 'pages/Market'
+//import { CartPage } from 'pages/CartPage'//
+//import { OrderConfirmation } from 'pages/OrderConfirmation'//
+//import { UserUpload } from 'pages/UserUpload'//
+//import { Market } from 'pages/Market'//
 import { About } from 'pages/About'
 import { ui } from 'reducers/ui'
 import { LandingPage } from 'pages/LandingPage'
@@ -49,8 +49,8 @@ const loadFromLocal = () => {
 }
 
 const reducer = combineReducers({
- // cart: cart.reducer,
- // user: user.reducer,
+ //cart: cart.reducer,//
+ //user: user.reducer,//
   ui: ui.reducer,
 })
 
@@ -79,11 +79,10 @@ export const App = () => {
           <Header />
           <MainContent>
             <Routes>
-              <Route exact path='/' element={<ProductPage />} />
-              <Route exact path='/about' element={<About />} />
-              <Route exact path='/main' element={<LandingPage />} />
-              <Route exact path='/notfound' element={<NotFound />} />
-    
+              <Route exact path="/" element={<ProductPage />} />
+              <Route exact path="/about" element={<About />} />
+              <Route exact path="/main" element={<LandingPage />} />
+              <Route exact path="/notfound" element={<NotFound />} />
               </Routes>
           </MainContent>
           <Footer />

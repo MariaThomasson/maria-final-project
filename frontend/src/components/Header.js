@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import { Link } from 'react-router-dom'
-//import { useSelector } from 'react-redux'
-//import { user } from './reducers/user'
+//import { useSelector } from 'react-redux'//
+//import { user } from './reducers/user'//
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChartBar } from '@fortawesome/free-solid-svg-icons'
 import { Hamburger } from './Hamburger'
@@ -78,24 +78,19 @@ const DesktopNav = styled.div`
 `
 
 export const Header = () => {
-
-
   return (
     <HeaderContainer>
       <Nav>
         <Hamburger />
-
         <Link to="/">
           <Title>Stretch Qonnect</Title>
         </Link>
-
         <NavList>
           <Link to="/cart">
             <ListItem>
               <FontAwesomeIcon icon={faChartBar} />
-          </ListItem>
+            </ListItem>
           </Link>
-
           <DesktopNav>
             <Link to="/products">
               <ListItem>Products</ListItem>

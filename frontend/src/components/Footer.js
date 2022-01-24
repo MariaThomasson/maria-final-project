@@ -54,10 +54,10 @@ export const Footer = () => {
     <FooterWrapper>
       <FooterSection>
         <Link to="/about">
-        <FooterTitle>About</FooterTitle>
+          <FooterTitle>About</FooterTitle>
         </Link>
         <FooterP>
-         This site was created for the Technigo Bootcamp's final project.
+         This site was created for the Technigo Bootcamp final project.
         </FooterP>
       </FooterSection>
 
