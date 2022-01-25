@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import styled from 'styled-components/macro'
 import { Link } from 'react-router-dom'
-//import { useSelector } from 'react-redux'//
-//import user from './reducers/user'//
+// import { useSelector } from 'react-redux' //
+// import user from './reducers/user' //
 
 const MenuToggle = styled.div`
   display: block;
@@ -102,11 +102,11 @@ const Input = styled.input`
 `
 
 export const Hamburger = () => {
-  //const accessToken = useSelector((store) => store.user.login.accessToken)//
+// const accessToken = useSelector((store) => store.user.login.accessToken) //
   const [check, setCheck] = useState(false)
 
   const menuClick = () => setCheck(!check)
- //const handleSignOut = () => dispatch(user.actions.logout())//
+// const handleSignOut = () => dispatch(user.actions.logout()) //
 
   return (
     <nav>

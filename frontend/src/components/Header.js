@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import { Link } from 'react-router-dom'
-//import { useSelector } from 'react-redux'//
-//import { user } from './reducers/user'//
+// import { useSelector } from 'react-redux' //
+// import { user } from './reducers/user' //
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChartBar } from '@fortawesome/free-solid-svg-icons'
 import { Hamburger } from './Hamburger'
