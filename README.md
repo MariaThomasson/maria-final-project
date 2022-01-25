@@ -1,8 +1,6 @@
-# Project Auth
+# Maria Final Project 
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+  This website was built by Maria Thomasson as my final project at the Technigo coding bootcamp. The project is a combination between school and my new job and aims to create value to our customers showing an integration between Qlik charts and webpages and how you can style them.
 
 ## The problem
 
