@@ -51,7 +51,7 @@ const loadFromLocal = () => {
 const reducer = combineReducers({
 // cart: cart.reducer, //
 // user: user.reducer, //
-  ui: ui.reducer,
+  ui: ui.reducer
 })
 
 const persistedState = loadFromLocal()
@@ -83,7 +83,7 @@ export const App = () => {
               <Route exact path="/about" element={<About />} />
               <Route exact path="/main" element={<LandingPage />} />
               <Route exact path="/notfound" element={<NotFound />} />
-              </Routes>
+            </Routes>
           </MainContent>
           <Footer />
         </Wrapper>

@@ -102,11 +102,11 @@ const Input = styled.input`
 `
 
 export const Hamburger = () => {
-// const accessToken = useSelector((store) => store.user.login.accessToken) //
+  // const accessToken = useSelector((store) => store.user.login.accessToken) //
   const [check, setCheck] = useState(false)
 
   const menuClick = () => setCheck(!check)
-// const handleSignOut = () => dispatch(user.actions.logout()) //
+  // const handleSignOut = () => dispatch(user.actions.logout()) //
 
   return (
     <nav>
